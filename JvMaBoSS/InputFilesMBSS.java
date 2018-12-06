@@ -33,9 +33,9 @@ public class InputFilesMBSS {
 	public final String bndName;
 	public final String cfgName;
 	public final HashSet<String> nodeSet = new HashSet<String>();
-	public final HashMap<String, String> extVarSet = new HashMap<String, String>(); // the value of an external variable
+	public final LinkedHashMap<String, String> extVarSet = new LinkedHashMap<String, String>(); // the value of an external variable
 																					// can be an expression.
-	public HashMap<String, String> extVarModSet = new HashMap<String, String>(); // extVarModSet is used at MaBoSS run
+	public LinkedHashMap<String, String> extVarModSet = new LinkedHashMap<String, String>(); // extVarModSet is used at MaBoSS run
 																					// (see Exec.java)
 	public String cfgModSuffix = new String(""); // suffix to add to cfg file when ApplyExtVarMod() is run
 	public HashSet<String> mutNodeSet = new HashSet<String>(); // set of node that are mutable (by changing external
